@@ -1,0 +1,44 @@
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "firstName": "Lucas",
+  "lastName": "Barroso",
+  "document": "123456781",
+  "email": "lucasfrotabarroso14@gmail.com",
+  "password": "1234567",
+  "userType": "COMMON",
+  "balance": 100
+}
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "firstName": "joao",
+  "lastName": "Barroso",
+  "document": "1234567s1",
+  "email": "joaofrotabarroso14@gmail.com",
+  "userType": "MERCHANT",
+  "password": "1234567",
+  "balance": 100
+}
+
+###
+
+GET http://localhost:8080/users
+
+###
+POST http://localhost:8080/transactions
+Content-Type: application/json
+
+{
+  "senderId": 3,
+  "receiverId": 1,
+  "value": 10
+
+}
+
+###
